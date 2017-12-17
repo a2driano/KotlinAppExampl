@@ -1,8 +1,8 @@
-package ua.clean.project.kotlinapp
+package ua.clean.project.kotlinapp.temp
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
+import ua.clean.project.kotlinapp.R
 
 class MainActivity : AppCompatActivity() {
 

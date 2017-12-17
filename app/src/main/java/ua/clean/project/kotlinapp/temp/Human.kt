@@ -1,4 +1,4 @@
-package ua.clean.project.kotlinapp
+package ua.clean.project.kotlinapp.temp
 
 /**
  * Created by kunde on 11.12.2017.

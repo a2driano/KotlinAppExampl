@@ -2,9 +2,14 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android">
 
     <data>
+
         <variable
             name="message"
-            type="ua.clean.project.kotlinapp.model.Message" />
+            type="ua.clean.project.kotlinapp.model.Message"/>
+
+        <variable
+            name="main"
+            type="ua.clean.project.kotlinapp.ActivityText"/>
 
     </data>
 
@@ -21,15 +26,15 @@
             android:layout_centerHorizontal="true"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="@{message.message}" />
+            android:text="@={message.post}"/>
 
         <TextView
             android:id="@+id/textView"
-            android:layout_below="@+id/editText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/editText"
             android:layout_centerHorizontal="true"
-            android:text="@={message.message}" />
+            android:text="@={message.post}"/>
 
         <Button
             android:id="@+id/button"
@@ -37,6 +42,7 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
-            android:text="Button" />
+            android:onClick="@{()->main.clickButton()}"
+            android:text="button"/>
     </RelativeLayout>
 </layout>
